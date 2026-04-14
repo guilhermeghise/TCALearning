@@ -10,14 +10,43 @@
 		D2BB23AE2F8D71AD00FFB956 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D2BB23AD2F8D71AD00FFB956 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D2BB23F72F8EC53200FFB956 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2BB23962F8D710400FFB956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2BB239D2F8D710400FFB956;
+			remoteInfo = TCALearning;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		D2BB239E2F8D710400FFB956 /* TCALearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TCALearning.app; path = "/Users/guilhermeghiserossoni/Desktop/TCALearning/build/Debug-iphoneos/TCALearning.app"; sourceTree = "<absolute>"; };
+		D2BB23BD2F8EA81E00FFB956 /* TCALearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TCALearning.app; path = "/Users/guilhermeghiserossoni/Desktop/TCALearning/build/Debug-iphoneos/TCALearning.app"; sourceTree = "<absolute>"; };
+		D2BB23F32F8EC53200FFB956 /* TCALearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TCALearningTests.xctest; path = "/Users/guilhermeghiserossoni/Desktop/TCALearning/build/Debug-iphoneos/TCALearning.app/PlugIns/TCALearningTests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D2BB23C52F8EB23C00FFB956 /* Exceptions for "TCALearning" folder in "TCALearning" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D2BB239D2F8D710400FFB956 /* TCALearning */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D2BB23A02F8D710400FFB956 /* TCALearning */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D2BB23C52F8EB23C00FFB956 /* Exceptions for "TCALearning" folder in "TCALearning" target */,
+			);
 			path = TCALearning;
+			sourceTree = "<group>";
+		};
+		D2BB23F42F8EC53200FFB956 /* TCALearningTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TCALearningTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +60,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2BB23F02F8EC53200FFB956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D2BB23A02F8D710400FFB956 /* TCALearning */,
+				D2BB23F42F8EC53200FFB956 /* TCALearningTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,8 +101,31 @@
 				D2BB23AD2F8D71AD00FFB956 /* ComposableArchitecture */,
 			);
 			productName = TCALearning;
-			productReference = D2BB239E2F8D710400FFB956 /* TCALearning.app */;
+			productReference = D2BB23BD2F8EA81E00FFB956 /* TCALearning.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D2BB23F22F8EC53200FFB956 /* TCALearningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2BB23F92F8EC53200FFB956 /* Build configuration list for PBXNativeTarget "TCALearningTests" */;
+			buildPhases = (
+				D2BB23EF2F8EC53200FFB956 /* Sources */,
+				D2BB23F02F8EC53200FFB956 /* Frameworks */,
+				D2BB23F12F8EC53200FFB956 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2BB23F82F8EC53200FFB956 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D2BB23F42F8EC53200FFB956 /* TCALearningTests */,
+			);
+			name = TCALearningTests;
+			packageProductDependencies = (
+			);
+			productName = TCALearningTests;
+			productReference = D2BB23F32F8EC53200FFB956 /* TCALearningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -79,6 +139,10 @@
 				TargetAttributes = {
 					D2BB239D2F8D710400FFB956 = {
 						CreatedOnToolsVersion = 26.1.1;
+					};
+					D2BB23F22F8EC53200FFB956 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = D2BB239D2F8D710400FFB956;
 					};
 				};
 			};
@@ -100,12 +164,20 @@
 			projectRoot = "";
 			targets = (
 				D2BB239D2F8D710400FFB956 /* TCALearning */,
+				D2BB23F22F8EC53200FFB956 /* TCALearningTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D2BB239C2F8D710400FFB956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BB23F12F8EC53200FFB956 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +194,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2BB23EF2F8EC53200FFB956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2BB23F82F8EC53200FFB956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2BB239D2F8D710400FFB956 /* TCALearning */;
+			targetProxy = D2BB23F72F8EC53200FFB956 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D2BB23A72F8D710500FFB956 /* Debug */ = {
@@ -256,6 +343,7 @@
 				DEVELOPMENT_TEAM = 75BF5C5F9K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCALearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -270,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -288,6 +376,7 @@
 				DEVELOPMENT_TEAM = 75BF5C5F9K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TCALearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,11 +391,53 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2BB23FA2F8EC53200FFB956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75BF5C5F9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoffeeOverflow.TCALearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCALearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCALearning";
+			};
+			name = Debug;
+		};
+		D2BB23FB2F8EC53200FFB956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75BF5C5F9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoffeeOverflow.TCALearningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCALearning.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TCALearning";
 			};
 			name = Release;
 		};
@@ -327,6 +458,15 @@
 			buildConfigurations = (
 				D2BB23AA2F8D710500FFB956 /* Debug */,
 				D2BB23AB2F8D710500FFB956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2BB23F92F8EC53200FFB956 /* Build configuration list for PBXNativeTarget "TCALearningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BB23FA2F8EC53200FFB956 /* Debug */,
+				D2BB23FB2F8EC53200FFB956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
